@@ -1,3 +1,6 @@
+(function(){
+    emailjs.init('user_Vth93JdMVS4OjsQEyYqPv');
+ })();
 jQuery(document).ready(function() {
 
     jQuery(".anchor").on("click", function (event) {
@@ -30,16 +33,26 @@ jQuery(document).ready(function() {
         event.preventDefault()
         let msg = `From:${jQuery("#your-name").val()} \n Message: ${jQuery("#message").val()}`
 
-        let success = true
-        // Email.send({
-        //     SecureToken : '',
-        //     To : '',
-        //     From : jQuery("#your-email").val()
-        //     Subject : "From my cv site site.com",
-        //     Body : msg
-        // }).then(
-        //   message => alert(message)
-        // );
+        let success
+
+
+
+
+        var templateParams = {
+            full_name: jQuery('#your_name').val(),
+            email: jQuery('#your_email').val(),
+            message: jQuery('#message').val()
+        };
+         
+        emailjs.send('gmail', 'base', templateParams)
+            .then(function(response) {
+               console.log('SUCCESS!', response.status, response.text);
+               success = true;
+            }, function(error) {
+               console.log('FAILED...', error);
+               success = false;
+            });
+
         if(success) {
             jQuery(".info_msg").text("Your message was sent successfully")
             jQuery(".info_msg").css('color','green')
@@ -50,5 +63,19 @@ jQuery(document).ready(function() {
         }
     })
 
+
+
+    jQuery(".cookie_ok").on("click", function(event) {
+        event.preventDefault()      
+        localStorage.setItem("cookie_ok", true)
+        jQuery(".cookies_alert").hide()
+    })
+    if(!localStorage.getItem("cookie_ok")) {
+        jQuery(".cookies_alert").show()
+    }
+
+
+
 })
+
 
