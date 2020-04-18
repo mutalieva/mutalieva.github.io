@@ -46,21 +46,16 @@ jQuery(document).ready(function() {
          
         emailjs.send('gmail', 'base', templateParams)
             .then(function(response) {
-               console.log('SUCCESS!', response.status, response.text);
-               success = true;
-            }, function(error) {
-               console.log('FAILED...', error);
-               success = false;
-            });
-
-        if(success) {
             jQuery(".info_msg").text("Your message was sent successfully")
             jQuery(".info_msg").css('color','green')
             alert("Your message was sent successfully")
-        } else {
-            jQuery(".info_msg").text("Oops, something went wrong :( ... Try later")
+               
+            }, function(error) {
+               jQuery(".info_msg").text("Oops, something went wrong :( ... Try later")
             jQuery(".info_msg").css('color','red')
-        }
+            });
+
+        
     })
 
 
