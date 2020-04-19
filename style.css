@@ -4,20 +4,38 @@ body {
 .bq{
     font-family:'Kaushan Script', cursive;
 }
-header{background: url(img/fon3.jpg) center center ;
+header{background: url(img/fon2.png) center center ;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 
     
 }
+.logo {
+    border: 1px solid #000;
+    width: 150px;
+    height: 70px;
+    background-color: #000;
+    color: white !important;
+}
+.collapse{
+border: 1px solid #000;
+    width: 400px;
+    height: 70px;
+    background-color: #000;
+    color: white !important;
+}
+.logo a{
+
+    float: left;
+}
 .skills{
     color: #cc0e74;
 }
-header a{
-    color: #fff !important;
+header nav-link{
+    color: black !important;
 }
-.main-title h1{
+/* .main-title h1{
     font-size: 90px;
     font-weight: bold;
     text-transform: uppercase;
@@ -27,8 +45,8 @@ header a{
     font-size: 50px;
     text-transform: uppercase;
 
-}
-.sub_title ,
+} */
+/* .sub_title ,
 .title ,
 .about2{
     color: #e6739f;
@@ -39,8 +57,8 @@ header a{
 .main-title span{
     font-size: 70px;
     display: block;
-}
-.main-title{
+} */
+/* .main-title{
     text-align: center;
      color: #fff !important;
     margin-top: 10%;
@@ -58,8 +76,9 @@ background-color: #fff;
 border:0;
 color:#cc0e74 !important;
 transition: 0.2s;
-}
+} */
 nav li a{
+    color: white !important;
     text-transform: uppercase ;
     text-decoration: none;
 
@@ -68,22 +87,28 @@ nav li  a:hover{
     color:#cc0e74 !important;
 }
 .navbar{
+    margin-right: -80px;
+    padding-top: 0;
     justify-content: space-between;
     float: right;
 
 }
-.icons{
+/* .icons{
     margin:10px 10px 0 10px; 
 width: 15px;
 height: 40px;
-}
+} */
 .about_block{
     margin:100px 0;
 }
-.title2{font-size: 35px;
+.title2{
+    color: #cc0e74 !important;
+
+    font-size: 35px;
     margin:100px 0 ;   
 }
  .title{
+    color: #cc0e74 !important;
     text-transform: uppercase;  
  }
  .line{
@@ -94,10 +119,13 @@ height: 40px;
     margin-bottom: 25px;
         margin-top: 30px;
 }
+.about_block{
+    margin-top: 600px;
+}
    
-  .about2{
+  .about2 p{
         margin-top: -50px;
-   color: #46454a;
+   color:#e6739f !important;
     margin-bottom: 100px;
  }
  .about_block img,
@@ -243,11 +271,7 @@ transition: all. 15s;
 .third_page{
     margin-top:  100px;
 }
-.third_page h1{
-   color:  #e6739f;
-   font-family: 'Montserrat', sans-serif;
-    
-}
+
 .third_page img:hover{
     opacity:0.5;
 
