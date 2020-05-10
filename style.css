@@ -11,6 +11,44 @@ header{background: url(img/fon2.png) center center ;
 
     
 }
+
+#tabs{
+    text-align: center;
+}
+
+.tab1{
+    background-color:#f8f8f8;
+    height: 500px;
+}
+#tabs,
+ .tab{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color:black;
+    color:white;
+   
+    
+}
+#tabs,
+.tab:hover{
+    color:#cc0e74 !important;
+    
+}
+
+
+
+
+
+#tabs,
+.hide{
+    display: none;
+}
+#tabs,
+.show{
+    display: block;
+}
+
 .logo {
     border: 1px solid #000;
     width: 150px;
@@ -35,48 +73,7 @@ border: 1px solid #000;
 header nav-link{
     color: black !important;
 }
-/* .main-title h1{
-    font-size: 90px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.nm {
 
-    font-size: 50px;
-    text-transform: uppercase;
-
-} */
-/* .sub_title ,
-.title ,
-.about2{
-    color: #e6739f;
-}
-.about2 p{
-    color: #e6739f;
-}
-.main-title span{
-    font-size: 70px;
-    display: block;
-} */
-/* .main-title{
-    text-align: center;
-     color: #fff !important;
-    margin-top: 10%;
-}
-a.more{
-    border: 2px solid #e6739f;
-    padding: 10px 20px;
-    margin-top:20px ;
-    display: inline-block;
-    
-}
-a.more:hover{
-text-decoration: none;
-background-color: #fff;
-border:0;
-color:#cc0e74 !important;
-transition: 0.2s;
-} */
 nav li a{
     color: white !important;
     text-transform: uppercase ;
@@ -93,14 +90,8 @@ nav li  a:hover{
     float: right;
 
 }
-/* .icons{
-    margin:10px 10px 0 10px; 
-width: 15px;
-height: 40px;
-} */
-.about_block{
-    margin:100px 0;
-}
+
+
 .title2{
     color: #cc0e74 !important;
 
@@ -119,8 +110,16 @@ height: 40px;
     margin-bottom: 25px;
         margin-top: 30px;
 }
+.lineDay{
+    height: 3px;
+    width: 120px;
+   background-color: #cc0e74;
+    margin: 0 auto;
+    margin-bottom: 25px;
+        margin-top: 30px;
+}
 .about_block{
-    margin-top: 600px;
+    margin-top: -500px;
 }
    
   .about2 p{
@@ -257,9 +256,9 @@ height: 40px;
 }
 .third_page img{
     
-width: 330px;
+
 height: 280px;
-transition: all. 15s;
+
 }
 .third_page {
     font-size: 35px;
@@ -268,88 +267,89 @@ transition: all. 15s;
     font-style: italic;
     color: white;
 }
-.third_page{
-    margin-top:  100px;
-}
+.modalBlock{
+    position: fixed;
+  display: none;
+  top: 0;
+  width: 700px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  margin: 250px 330px;
+    position: absolute;
 
-.third_page img:hover{
-    opacity:0.5;
 
 }
-figure{
-    margin-top: 55px;
-    left: 50px;
-    position: relative;
-    width: 250px;
-    height: 250px;
-     background-image: -moz-linear-gradient( 90deg, rgba(204,14,116,0.9) 0%, rgba(244,216,231,0.5) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgba(204,14,116,0.9) 0%, rgba(244,216,231,0.5) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgba(204,14,116,0.9) 0%, rgba(244,216,231,0.5) 100%);
-    color: white;
-    display:inline-table;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-figcaption h2{
-  font-family:'Kaushan Script', cursive;
-}
-figure h2{
+.closeBtn,
+.more{
+    cursor: pointer;
    
+}
+.more{
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    justify-content: center;
+    margin:500px;
+}
+.modalTitle{
+    color:black;
+    background-color:white;
+    text-align:center;
+    margin: 20px 0 0 0 ;
+}
+.modalText{
     
-    text-transform: uppercase;
-    transition: 0.2s;
-    transform: translateY(20px);
-
+    margin: 50px;
+    background-color: white;
 }
-figure p{
-
+.modalText p{
+    color: black !important;
+}
+.closeBtn{
+    width: 100px;
+    margin: 0 600px;
+    text-align: center;
+    background-color: white;
+    border: 1px sold violet;
+    font-size: 30px;
+    border-radius: 5px;
+}
+ 
+.bd{
+    background-color: #f8f8f8;
+    height: 400;
+    margin-top: -60px;
+}
+#timer{
     
-    text-transform: uppercase;
-    transition: 0.2s;
-    opacity: 0;
-    transform: translateY(-20px);
+    margin: 40px 300px;
+     font-size: 60px;
+    color: #cc0e74 !important; 
 }
-figure:before{
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-    border-top: solid 2px;
-border-bottom: solid 2px;
-transition: 0.2s;
-transform: scaleX(0);
+.btnDay{
+    margin: 20px 450px;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #cc0e74;
+    font-size: 18px;
+    color: #cc0e74;
+    cursor: pointer;
+   
 }
 
-figure:after{
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-    border-left: solid 2px;
-border-right: solid 2px;
-transition: 0.2s;
-transform: scaleY(0);
+ 
+.btnDay:hover{
+    box-shadow: 0 0 10px #cc0e74;
 }
-figure:hover:before
-{
-    transform:scale(1);
+.ideasBlock{
+    width: 400px;
+    height: 200px;
+    background-color:#cc0e74;
 }
-figure:hover:after
-{
-    transform:scale(1);
-}
-figure:hover h2,
-figure:hover p{
-    transform: translateY(0);
-    opacity: 1;
-}
-
 .contacts_block{
         margin-top: 70px;
     color: #cc0e74 !important;
